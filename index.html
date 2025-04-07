@@ -1,0 +1,159 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows Desktop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="desktop">
+        <div class="icons">
+            <div class="icon" data-name="My Computer">
+                <img src="My Computer.ico" width="32" height="32" alt="My Computer">
+                <span>My Computer</span>
+            </div>
+            <div class="icon" data-name="Twitch">
+                <img src="pack1088-split (1).png" width="32" height="32" alt="Twitch">
+                <span>Twitch</span>
+            </div>
+            <div class="icon" data-name="Microsoft Store">
+                <img src="microsoftstore-Photoroom.png" width="32" height="32" alt="Microsoft Store">
+                <span>Microsoft Store</span>
+            </div>
+            <div class="icon" data-name="Recycle Bin">
+                <img src="recycle-bin-683244_960_720.webp" width="32" height="32" alt="Recycle Bin">
+                <span>Recycle Bin</span>
+            </div>
+            <div class="icon" data-name="Internet Explorer">
+                <img src="internet Explorer .png" width="32" height="32" alt="Internet Explorer">
+                <span>Internet Explorer</span>
+            </div>
+            <div class="icon" data-name="My Documents">
+                <svg viewBox="0 0 24 24" width="32" height="32">
+                    <path d="M5,3 L15,3 L19,7 L19,21 L5,21 Z" fill="#ffffcc" stroke="#000" stroke-width="0.5"/>
+                    <path d="M15,3 L15,7 L19,7" fill="none" stroke="#000" stroke-width="0.5"/>
+                    <path d="M8,12 L16,12 M8,15 L16,15 M8,18 L14,18" stroke="#555" stroke-width="0.5"/>
+                </svg>
+                <span>My Documents</span>
+            </div>
+            <div class="icon" data-name="Calculator">
+                <img src="IMG_3071.webp" width="32" height="32" alt="Calculator">
+                <span>Calculator</span>
+            </div>
+            <div class="icon" data-name="Command Prompt">
+                <img src="skibidiicon.png" width="32" height="32" alt="Command Prompt">
+                <span>Command Prompt</span>
+            </div>
+            <div class="icon" data-name="Notepad">
+                <img src="notepad-icon-7.png" width="32" height="32" alt="Notepad">
+                <span>Notepad</span>
+            </div>
+            <div class="icon" data-name="Media Player">
+                <img src="media player icon.webp" width="32" height="32" alt="Media Player">
+                <span>Media Player</span>
+            </div>
+            <div class="icon" data-name="Paint MS">
+                <img src="MSPaint.png" width="32" height="32" alt="Paint MS">
+                <span>Paint MS</span>
+            </div>
+            <div class="icon" data-name="Minesweeper">
+                <img src="Minesweeper_icon.png" width="32" height="32" alt="Minesweeper">
+                <span>Minesweeper</span>
+            </div>
+            <div class="icon" data-name="Chess">
+                <img src="Player.png" width="32" height="32" alt="Chess">
+                <span>Chess</span>
+            </div>
+            <div class="icon" data-name="Gmail">
+                <img src="Email logo.png" width="32" height="32" alt="Gmail">
+                <span>Gmail</span>
+            </div>
+            <div class="icon" data-name="Youtube">
+                <img src="Youtubepink.png" width="32" height="32" alt="Youtube">
+                <span>Youtube</span>
+            </div>
+        </div>
+        
+        <div class="taskbar">
+            <div class="start-button">
+                <img src="start.png" height="22" alt="Start">
+            </div>
+            <div class="taskbar-divider"></div>
+            <div class="open-windows"></div>
+            <div class="system-tray">
+                <div class="time">12:00 PM</div>
+            </div>
+        </div>
+    </div>
+    <div class="window" id="window-template" style="display: none;">
+        <div class="window-header">
+            <div class="window-title"></div>
+            <div class="window-controls">
+                <button class="minimize">_</button>
+                <button class="maximize">□</button>
+                <button class="close">✕</button>
+            </div>
+        </div>
+        <div class="window-menu">
+            <div>File</div>
+            <div>Edit</div>
+            <div>View</div>
+            <div>Help</div>
+        </div>
+        <div class="window-content"></div>
+        <div class="window-statusbar"></div>
+    </div>
+    <div class="start-menu" style="display: none;">
+        <div class="start-header">
+            <div class="start-user">
+                <svg viewBox="0 0 24 24" width="32" height="32">
+                    <circle cx="12" cy="8" r="5" fill="#d3d3d3"/>
+                    <path d="M4,20 C4,14 8,12 12,12 C16,12 20,14 20,20" fill="#d3d3d3"/>
+                </svg>
+                <span>User</span>
+            </div>
+        </div>
+        <div class="menu-items">
+            <div class="menu-item">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                    <rect x="3" y="3" width="18" height="18" rx="2" fill="#d3d3d3"/>
+                    <circle cx="12" cy="12" r="5" fill="#555"/>
+                </svg>
+                <span>Programs</span>
+            </div>
+            <div class="menu-item">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                    <path d="M5,3 L15,3 L19,7 L19,21 L5,21 Z" fill="#ffffcc"/>
+                    <path d="M8,12 L16,12 M8,15 L16,15 M8,18 L14,18" stroke="#555" stroke-width="0.5"/>
+                </svg>
+                <span>Documents</span>
+            </div>
+            <div class="menu-item">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                    <circle cx="12" cy="12" r="8" fill="#555"/>
+                    <rect x="11" y="6" width="2" height="6" fill="white"/>
+                    <circle cx="12" cy="15" r="1" fill="white"/>
+                </svg>
+                <span>Settings</span>
+            </div>
+            <div class="menu-item">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                    <circle cx="12" cy="12" r="8" fill="#d32f2f"/>
+                    <rect x="7" y="11" width="10" height="2" fill="white"/>
+                </svg>
+                <span>Shut Down</span>
+            </div>
+        </div>
+    </div>
+    <div id="clippy-container" style="position: fixed; bottom: 50px; right: 30px; z-index: 1000; cursor: pointer; display: none;">
+        <img src="Clippy.png" width="100" height="100" alt="Clippy">
+        <div id="clippy-bubble" style="position: absolute; bottom: 100%; right: 0; background: white; border: 1px solid #0078d7; border-radius: 8px; padding: 10px; width: 200px; display: none;">
+            <p id="clippy-text">Hi there! I'm Clippy. Need some help?</p>
+            <div style="text-align: right;">
+                <button id="clippy-close" style="border: none; background: none; cursor: pointer; color: #666;">✕</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
